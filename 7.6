@@ -1,0 +1,10 @@
+bm <- read.csv("Book1.csv", stringsAsFactors = FALSE)
+View(bm)
+nrows <- nrow(bm)
+nrows
+i <- sample(nrows, 100)
+i
+bm1<- bm[i,]
+View(bm1)
+bm2<- bm[-i]
+View(bm2)
